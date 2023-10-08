@@ -14,7 +14,7 @@ TAREFAS PRINCIPAIS
 
 A nossa solução conta com as seguintes funcionalidades:
 
-• Qualquer utilizador poderá:
+- Qualquer utilizador poderá:
 
 ▪ Visualizar lojas
 
@@ -22,7 +22,8 @@ A nossa solução conta com as seguintes funcionalidades:
 
 ▪ Registar-se
 
-• Utilizadores registados poderão:
+
+- Utilizadores registados poderão:
 
 ▪ Têm uma área pessoal
 
@@ -34,7 +35,8 @@ A nossa solução conta com as seguintes funcionalidades:
 
 ▪ Finalizar compra
 
-• As lojas terão:
+
+- As lojas terão:
 
 ▪ Um nome
 
@@ -42,7 +44,8 @@ A nossa solução conta com as seguintes funcionalidades:
 
 ▪ Localização
 
-• A área pessoal do utilizador terá:
+
+- A área pessoal do utilizador terá:
 
 ▪ Nome
 
@@ -60,39 +63,13 @@ TAREFAS OPCIONAL
 
 PÚBLICO-ALVO
 
-A nossa aplicação é destinada a pessoas angolanas ou não de idade mínima
-
-de 16 anos. Optamos por esta idade por questões de segurança, tanto pela
-
-culinária quanto por questões bancárias
+A nossa aplicação é destinada a pessoas angolanas ou não de idade mínima de 16 anos. Optamos por esta idade por questões de segurança, tanto pela culinária quanto por questões bancárias
 
 ANALISE COMPETITIVA
 
-Para sabermos a importância e a eficácia da nossa aplicação web
+Para sabermos a importância e a eficácia da nossa aplicação web pesquisamos por aplicações parecidas ou que tenham qualquer semelhança com a nossa. Pudemos ver que com exatamente o mesmo fim que a nossa não há. Mas a Uber Eats, Glovo, Bolt Food, AliExpress e Alibaba.
 
-pesquisamos por aplicações parecidas ou que tenham qualquer semelhança
-
-com a nossa.
-
-Pudemos ver que com exatamente o mesmo fim que a nossa não há. Mas a
-
-Uber Eats, Glovo, Bolt Food, AliExpress e Alibaba.
-
-Embora AliExpress e Alibaba vendam uma variedade enorme de produtos,
-
-todas elas agregam várias lojas e comercializam os produtos destas, utilizam a
-
-localização tanto para entrega como para levantamento de compras.
-
-Todas estas aplicações fazem a entrega dos produtos, então a longo prazo
-
-pretendemos incorporar esta funcionalidade também, pois sabemos que é uma
-
-mais-valia.
-
-Com esta pesquisa pudemos ver que a nossa aplicação será bem-sucedida,
-
-pudemos ver que as pessoas precisam e procuram aplicações desse tipo.
+Embora AliExpress e Alibaba vendam uma variedade enorme de produtos, todas elas agregam várias lojas e comercializam os produtos destas, utilizam a localização tanto para entrega como para levantamento de compras. Todas estas aplicações fazem a entrega dos produtos, então a longo prazo pretendemos incorporar esta funcionalidade também, pois sabemos que é uma mais-valia. Com esta pesquisa pudemos ver que a nossa aplicação será bem-sucedida, pudemos ver que as pessoas precisam e procuram aplicações desse tipo.
 
 **Descrição prévia da Arquitetura da solução:** Arquitetura do Sistema:
 

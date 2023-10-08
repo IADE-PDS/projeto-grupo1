@@ -139,4 +139,4 @@ Integramos também o botão IoT na nossa arquitetura. Quando o botão IoT é aci
 2. Navega para a página do carrinho.
 3. Verifica se os produtos pré-definidos foram adicionados corretamente ao carrinho.
 4. Prossigue para o pagamento utilizando a API de pagamentos.
-5. Finaliza a compra e verifique se recebeu uma confirmação.
+5. Finaliza a compra e verifique se recebeu uma confirmação. 

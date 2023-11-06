@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: black;
+}
+
+header{
+    height: min-content;
+    width: 100%;
+   padding: 50px 50; 
+   background: linear-gradient(-45deg, #f3b311, #f16e16);
+   margin: 100;
+}
+
+header .menu
+{
+    
+}
+
+h1
+{
+  color: black;  
+    font-size: 1.6em;
+}
+
+#rodape
+{
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+#principal
+{
+    width: 900px;
+}
+
+.opcoes
+{ 
+    background-color: antiquewhite;
+    padding: 18px;
+}
+
+.opcoes a
+{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid orange;
+    padding: 5px;
+}
+
+#conteudo
+{
+    padding: 10px;
+    background: beige;
+}

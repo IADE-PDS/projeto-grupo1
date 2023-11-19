@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-web-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: k8s-web-app
+  template:
+    metadata:
+      labels:
+        app: k8s-web-app
+    spec:
+      containers:
+      - name: k8s-web-app
+        image: wesley06/frontend-mambos
+        ports:
+        - containerPort: 3000

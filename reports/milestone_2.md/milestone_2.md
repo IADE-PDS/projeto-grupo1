@@ -1,6 +1,6 @@
 **Versão atualizada do relatório**
 
-<h3>**Descrição prévia da Arquitetura da solução atualizada**</h3>
+<h3> **Descrição prévia da Arquitetura da solução atualizada** </h3>
 
 Para explicar o fluxo desta arquitetura devemos primeiro compreender que componentes fazem parte dela. 
 

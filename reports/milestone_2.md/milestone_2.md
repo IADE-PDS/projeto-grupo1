@@ -28,7 +28,8 @@ Agora explicando o fluxo actual da nossa aplicação até ao momento.
 
 4 - A base de dados principal recebe o pedido e o actualiza imediatamente para a base de dados replica. Tendo as duas exatamente os mesmos dados em tempo real. Apenas a base de dados principal envia selects e inserts. E a base de dados replica envia selects e inserts apenas quando a principal está embaixo.
 
-[SD.drawio 2.pdf](https://github.com/IADE-PDS/projeto-grupo1/files/13404709/SD.drawio.2.pdf)
+![image](https://github.com/IADE-PDS/projeto-grupo1/assets/100430459/d2173fbf-75e3-4642-bd8b-d7ac8791aa63)
+
 
 **Api de pagamento atualizado**
 

@@ -1,0 +1,147 @@
+.productsecciondetails{
+
+    background-color:#f5f5dc;
+    width: 100%;
+    height: auto;
+}
+
+.productCardPositioner{
+
+    width: 100%;
+    background-color:#f5f5dc;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Frase-Positioner{
+    font-size: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.StoreSeccion{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.StoreSeccionPositioner{
+
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.Card{
+
+    width: 500px;
+    height: 700px;
+    background-color: white;
+    border-radius: 15px;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.img1{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.img1 img{
+
+    width: 480px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.prod_nome{
+
+    width: 100%;
+    height: auto;
+}
+
+.prod_nome span{
+
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.prod_endereco{
+
+    width: 100%;
+    height: auto;
+}
+
+.prod_endereco span{
+
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.prod_preco{
+
+    width: 100%;
+    height: auto;
+}
+
+.prod_preco span{
+
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.prod_quantidade{
+
+    width: 100%;
+    height: auto;
+}
+
+.prod_quantidade span{
+
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.prod_quantidadeSet{
+
+    width: 100%;
+    height: auto;
+}
+
+.prod_quantidadeSet input{
+
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.carrinhoButton{
+
+    width: 100%;
+    height: auto;
+}
+
+.carrinhoButton button{
+
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: 20px;
+    width: 90%;
+    border-style: none;
+    background-color: black;
+}
+
+.carrinhoButton button span{
+
+    color: white;
+}

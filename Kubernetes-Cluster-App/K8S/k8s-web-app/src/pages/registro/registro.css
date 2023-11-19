@@ -1,0 +1,17 @@
+.loginCardRegister{
+
+    width: 400px;
+    height: 600px;
+    background: rgb(243,168,18);
+    background: linear-gradient(180deg, rgba(243,168,18,1) 0%, rgba(242,149,19,1) 49%, rgba(241,122,21,1) 100%);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginCardRegister h1{
+
+    color: white;
+}

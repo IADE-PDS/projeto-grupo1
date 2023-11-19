@@ -1,0 +1,8 @@
+.locationSeccion{
+
+    background-color:#f5f5dc;
+    width: 100%;
+    height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+}

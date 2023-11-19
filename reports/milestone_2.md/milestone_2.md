@@ -104,8 +104,8 @@ o	Profissão: Empresário
 o	Objetivo: Deseja vender produtos para ganhar algum dinheiro extra e aumentar a visibilidade da sua loja e atrair mais clientes interessados em produtos para confecção de pratos típicos angolanos.
 
 <h3> **Diagrama de dominio** </h3>
+![WhatsApp Image 2023-11-19 at 23 54 56](https://github.com/IADE-PDS/projeto-grupo1/assets/100430459/509bf055-afc1-4d10-bda8-89efee61c524)
 
-![Captura de Ecrã (145)](https://github.com/IADE-PDS/projeto-grupo1/assets/100430459/b7e0ec30-be59-46f5-806f-c295d8efee6a)
 
 <h3> **Primeira versão da documentação da API REST** </h3>
 

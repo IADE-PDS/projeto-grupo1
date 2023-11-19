@@ -115,5 +115,14 @@ o	Objetivo: Deseja vender produtos para ganhar algum dinheiro extra e aumentar a
 
 <h3> **Outros artefactos a definir pela UC de Engenharia de Software, de acordo com o projeto** </h3>
 
+UML 
+
+![UML3-2](https://github.com/IADE-PDS/projeto-grupo1/assets/100430459/f0c7ef6a-f2cd-41a8-b637-bea1f8fa716f)
+
+
+
+
+
+
 
 

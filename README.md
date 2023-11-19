@@ -7,4 +7,4 @@ O **código fonte** da 1ªentrega do projeto encontrasse no **brach** com nome *
 
 O **código fonte** da 2ªentrega do projeto *onde há implementação do código para o botão* encontrasse no **brach** com nome **"codigo.v2"**
 
-O **código fonte** da 2ªentrega do projeto *da implementação parcial da estratégia de distribuiçã* encontrasse no **brach** com nome **"Kubernetes-Dockerized-App1"**
+O **código fonte** da 2ªentrega do projeto *da implementação parcial da estratégia de distribuição* encontrasse no **brach** com nome **"Kubernetes-Dockerized-App1"**

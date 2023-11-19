@@ -1,6 +1,6 @@
 **Versão atualizada do relatório**
 
-**Descrição prévia da Arquitetura da solução atualizada**
+<h3>**Descrição prévia da Arquitetura da solução atualizada**</h3>
 
 Para explicar o fluxo desta arquitetura devemos primeiro compreender que componentes fazem parte dela. 
 
@@ -31,7 +31,8 @@ Agora explicando o fluxo actual da nossa aplicação até ao momento.
 ![image](https://github.com/IADE-PDS/projeto-grupo1/assets/100430459/d2173fbf-75e3-4642-bd8b-d7ac8791aa63)
 
 
-**Api de pagamento atualizado**
+
+<h3>**Api de pagamento atualizado**</h3>
 
 A Api de pagamento escolhida é o **Stripe**, vamos explicar sobre o Stripe:
 
@@ -55,7 +56,7 @@ Créditos da foto: Stripe
 Cada chamada para uma API do Stripe deve incluir uma chave secreta da API. Depois de criar uma conta do Stripe, geram dois pares de chaves de API para nós — uma chave do lado do cliente publicável e uma chave secreta do lado do servidor — para os modos de teste e ao vivo. Para começar a movimentar dinheiro real com suas chaves de modo ao vivo, você precisa ativar sua conta.
 
 
-**Definição final dos guiões**
+<h3> **Definição final dos guiões** </h3>
 
 1º Caso: Utilizador registado:
 
@@ -82,7 +83,7 @@ Cada chamada para uma API do Stripe deve incluir uma chave secreta da API. Depoi
 4. Prossigue para o pagamento utilizando a API de pagamentos.
 5. Finaliza a compra e verifique se recebeu uma confirmação.
 
-**Definição final das personas**
+<h3> **Definição final das personas** </h3>
 
 1.	Utilizador ocasional:
 o	Nome: Juliana Mendez
@@ -102,13 +103,13 @@ o	Idade: 40 anos
 o	Profissão: Empresário
 o	Objetivo: Deseja vender produtos para ganhar algum dinheiro extra e aumentar a visibilidade da sua loja e atrair mais clientes interessados em produtos para confecção de pratos típicos angolanos.
 
-**Diagrama de dominio**
+<h3> **Diagrama de dominio** </h3>
 
 ![Captura de Ecrã (145)](https://github.com/IADE-PDS/projeto-grupo1/assets/100430459/b7e0ec30-be59-46f5-806f-c295d8efee6a)
 
-**Primeira versão da documentação da API REST**
+<h3> **Primeira versão da documentação da API REST** </h3>
 
-**Um esboço da estrutura dos dados**
+<h3> **Um esboço da estrutura dos dados** </h3>
 
 ![WhatsApp Image 2023-11-19 at 16 59 40](https://github.com/IADE-PDS/projeto-grupo1/assets/100430459/f88e0e1d-39d4-4ff9-9dfa-a10449183208)
 

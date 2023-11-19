@@ -109,6 +109,313 @@ o	Objetivo: Deseja vender produtos para ganhar algum dinheiro extra e aumentar a
 
 <h3> **Primeira versão da documentação da API REST** </h3>
 
+DOCUMENTAÇÃO REST API VERSÃO 1
+
+<h4> **1 - Recurso Produtos (os métodos do recurso “Produtos”, engloba os Produtos disponíveis. 
+(nome, imagem, descrição, etc. ))** </h4>
+
+Objetivo: Exibir todos os Produtos
+
+Descrição: Devolve uma lista de todos os Produtos listados. 
+
+URL: /api/produtos?search (GET – Produtos)
+
+Dados:
+
+Resultado: 
+[
+ {
+ "id": 1,
+ "name": "Moamba 250g",
+ "imgUrl": "imagens/moamba_16_11zon.png",
+ "descricao": "Ginguba/Amendoim torrada moída",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 2,
+ "name": "Fuba de bombó 3kg",
+ "imgUrl": "imagens/FubaDeBombo.png",
+ "descricao": "Farinha de mandioca, 1Kg",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 3,
+ "name": "Oleo de palma 1L",
+ "imgUrl": "imagens/OleoDePalma.png",
+ "descricao": "Azeite de dendê, 1L",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 4,
+ "name": "Farinha musseque 1kg",
+ "imgUrl": "imagens/FarinhaMusseque.png",
+ "descricao": "Farinha de mandioca torrada",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 5,
+ "name": "Mucua 2kg",
+ "imgUrl": "imagens/mukua_15_11zon.png",
+ "descricao": "Fruto do embondeiro",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 6,
+ "name": "Muteta 300g",
+ "imgUrl": "imagens/muteta_14_11zon.png",
+ "descricao": "Semente de abobora moída",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 7,
+ "name": "Bagre fumado 1kg",
+ "imgUrl": "imagens/bagreFumado_13_11zon.png",
+ "descricao": "Bagre seco defumado",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 8,
+ "name": "Carne seca 1kg",
+ "imgUrl": "imagens/carneSeca_12_11zon.png",
+ "descricao": "Carne de vaca com gordura seca",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 9,
+ "name": "Gimboa 500g",
+ "imgUrl": "imagens/gimboa_11_11zon.png",
+ "descricao": " Folha da gimboa",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 10,
+ "name": "Kizaca 3kg",
+ "imgUrl": "imagens/kizacaMonte.png",
+ "descricao": "Folha de mandioca triturada",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 11,
+ "name": "Rama de batata 400g",
+ "imgUrl": "imagens/ramaDeBatata_10_11zon.png",
+ "descricao": "Folha da batata doce",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 12,
+ "name": "Fuba de milho 3kg",
+ "imgUrl": "imagens/FubaDeMilho.png",
+ "descricao": "Farinha de milho",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 13,
+ "name": "Banana pão 1kg",
+ "imgUrl": "imagens/bananaPao_9_11zon.png",
+ "descricao": "Variedade de banana de cerca 30cm",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 14,
+ "name": "Catato 500g",
+ "imgUrl": "imagens/catato.png.jpg",
+ "descricao": "Largata que vive no topo das palmeiras",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 15,
+ "name": "Dendem 500g",
+ "imgUrl": "imagens/Dendem.png",
+ "descricao": "Fruto do dendezeiro",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 16,
+ "name": "Ginguba 1kg",
+ "imgUrl": "imagens/ginguba_8_11zon.png",
+ "descricao": "Ginguba/Amendoim ",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 17,
+ "name": "Paracuca 500g",
+ "imgUrl": "imagens/paracuca_7_11zon.png",
+ "descricao": "Ginguba/Amendoim torrado enrolado em açucar",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 18,
+ "name": "Sape-Sape 1kg",
+ "imgUrl": "imagens/SapeSape_6_11zon.png",
+ "descricao": "Fruto que pertence a familia das anonáceas",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 19,
+ "name": "Carambola 1kg",
+ "imgUrl": "imagens/carambola_5_11zon.png",
+ "descricao": "Fruto da caramboleira",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 20,
+ "name": "Tamarindo 400g",
+ "imgUrl": "imagens/moamba_16_11zon.png",
+ "descricao": "Fruto da tamarineira",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 21,
+ "name": "Maboque 1kg",
+ "imgUrl": "imagens/moamba_16_11zon.png",
+ "descricao": "Fruto do maboqueiro",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 22,
+ "name": "Loengo 1kg",
+ "imgUrl": "imagens/moamba_16_11zon.png",
+ "descricao": "Fruto roxo proximo ao preto",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 23,
+ "name": "Cana de Açucar 2kg",
+ "imgUrl": "imagens/CanaDeAcucar.png",
+ "descricao": "Fruto roxo proximo ao preto",
+ "preco": null,
+ "quantidade": null
+ },
+ {
+ "id": 24,
+ "name": "Ginguba 1kg",
+ "imgUrl": "imagens/ginguba_8_11zon.png",
+ "descricao": "Fruto roxo proximo ao preto",
+ "preco": null,
+ "quantidade": null
+ }
+]
+
+
+Objetivo: Listar todas as lojas disponíveis
+
+Descrição: Devolver todas as lojas apresentadas no website. 
+
+URL: /api/lojas (GET – Lojas)
+
+Dados: 
+
+Resultado:
+[
+ {
+ "id": 1,
+ "nome": "Tudo Aqui",
+ "email": "tudo_aqui@gmail.com",
+ "endereco": "Lisboa Rua da cascalheira",
+ "contacto": "935678932",
+ "cpostal": "1300-122 ",
+ "img_url": "imagens/loja.png",
+ "products": []
+ },
+ {
+ "id": 2,
+ "nome": "Angolan Foods",
+ "email": "angolan_foods@gmail.com",
+ "endereco": "Lisboa Rua 10",
+ "contacto": "933458960",
+ "cpostal": "1300-174 ",
+ "img_url": "imagens/loja.png",
+ "products": []
+ },
+ {
+ "id": 3,
+ "nome": "Cozinha Angolana",
+ "email": "cozinha_angolana@gmail.com",
+ "endereco": "Lisboa Travessa da Ajuda",
+ "contacto": "933332109",
+ "cpostal": "1300-021 ",
+ "img_url": "imagens/loja.png",
+ "products": []
+ },
+ {
+ "id": 4,
+ "nome": "Sabores da Banda",
+ "email": "sabores_da_banda@gmail.com",
+ "endereco": "Queluz Avenida 1º de Maio",
+ "contacto": "965300594",
+ "cpostal": "2745-832 ",
+ "img_url": "imagens/loja.png",
+ "products": []
+ },
+ {
+ "id": 5,
+ "nome": "Comida do Mangope",
+ "email": "comida_do_mangope@gmail.com",
+ "endereco": "Lisboa Travessa Henrique Cardoso",
+ "contacto": "963617504",
+ "cpostal": "1700-227 ",
+ "img_url": "imagens/loja.png",
+ "products": []
+ },
+ {
+ "id": 6,
+ "nome": "Angolana",
+ "email": "angolana@gmail.com",
+ "endereco": "Rua João do Nascimento Costa",
+ "contacto": "963617504",
+ "cpostal": "1900-269 ",
+ "img_url": "imagens/loja.png",
+ "products": []
+ }
+]
+
+
+Objetivo: Obter um determinado produto ao pesquisar
+
+Descrição: Obter o nome do produto, descrição, imagem de um produto após a pesquisa 
+por nome. 
+
+URL: /api/produtos?search={place product name} (GET – Produto)
+
+Parâmetros: id - Devolve as informações de um produto selecionado através do nome. 
+
+Dados:
+
+Resultado, com o product “moamba”:
+[
+ {
+ "id": 1,
+ "name": "Moamba 250g",
+ "imgUrl": "imagens/moamba_16_11zon.png",
+ "descricao": "Ginguba/Amendoim torrada moída",
+ "preco": null,
+ "quantidade": null
+ }
+]
+
+
 <h3> **Um esboço da estrutura dos dados** </h3>
 
 ![WhatsApp Image 2023-11-19 at 16 59 40](https://github.com/IADE-PDS/projeto-grupo1/assets/100430459/f88e0e1d-39d4-4ff9-9dfa-a10449183208)

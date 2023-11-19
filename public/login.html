@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link  rel="stylesheet"   type="text/css"  href="../stylesheets/login.css"/>
+    <link  rel="stylesheet"   type="text/css"  href="../stylesheets/principal.css"/>
+    <script src="../javascripts/utils/verifications.js"></script>
+    <script src="../javascripts/location.js"></script>
+    <script src="../javascripts/login.js"></script> 
+    <script src="../javascripts/requests/usersRequests.js"></script>
+    <script src="/middleware/auth.js"></script>
+</head>
+<body>
+
+    <header>
+        <section id="logo">
+            <a href="/index.html"><img src="../imagens/logo.png" width="70"></a>
+        </section>
+            <section class="principal">
+                <h5> Mambos Da Banda </h5> 
+            </section>    
+    </header>
+
+    <section id="form">
+        <form action="javascript:login()">
+           
+            <section class="title">
+                <h1>Login</h1>
+            </section>
+
+            <label for="">Email</label>
+            <section class="input">
+                <i class="fa-regular fa-envelope"></i>
+                <input id="Email" name="Email" placeholder="Email" type="text">
+            </section>
+
+            <label for="">Palavra Passe</label>
+            <section class="input">
+                <i class="fa-solid fa-lock"></i>
+                <input id="palavraPasse" name="Palavra Passe" placeholder="Palavra Passe" type="password">
+            </section>
+
+            <section class="botao">
+                <p id="msg" class="warning"></p>
+                <button type="submit" value="Login">
+                <a  > Entrar </a> </button>
+            </section>
+
+            <a href="registo.html"> Ainda não tem conta? </a>
+        </form>
+    </section><!--form-->
+</body>
+</html>

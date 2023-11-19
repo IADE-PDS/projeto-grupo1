@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registo</title>
+    <link  rel="stylesheet"   type="text/css"  href="../stylesheets/registo.css"/>
+    <link  rel="stylesheet"   type="text/css"  href="../stylesheets/principal.css"/>
+    <script src="../javascripts/utils/verifications.js"></script>
+    <script src="../javascripts/location.js"></script>
+    <script src="../javascripts/register.js"></script> 
+    <script src="../javascripts/requests/usersRequests.js"></script>
+
+    
+   
+
+</head>
+<body>
+
+    <header>
+        <section id="logo">
+            <a href="/index.html"><img src="../imagens/logo.png" width="70"></a>
+        </section>
+            <section class="principal">
+                <h5> Mambos Da Banda </h5> 
+            </section>    
+    </header>
+
+
+    <section id="form">
+        
+            <section class="title">
+                <h2>Registo</h2>
+            </section>
+            
+
+            <label for="">Nome</label> 
+            <section class="input">
+                <i class="fa-regular fa-circle-user"></i>
+                <input id="nome" name="Nome" placeholder="Nome" type="text">
+            </section>
+
+            <label for="">Email</label>
+            <section class="input">
+                <i class="fa-regular fa-envelope"></i>
+                <input id="email" name="Email" placeholder="Email" type="text">
+            </section>
+
+            <label for="">Palavra Passe</label>
+            <section class="input">
+                <i class="fa-solid fa-lock"></i>
+                <input id="palavraPasse" name="Palavra Passe" placeholder="Palavra Passe" type="password">
+            </section>
+
+            <section class="botao">
+                <p id="msg" class="warning"></p>
+                <button onclick="getLocationRegister()">Registar</button>
+                <!--<button type="submit"  value="register"> Registar </button>-->
+            </section>
+
+            <section class="botao"> 
+                <button type="submit"> <a href="registoLoja.html"> Registo de loja</a> </button>
+            </section>
+
+            <a href="login.html"> Vá para o login </a>
+        
+    </section><!--form-->
+</body>
+</html>

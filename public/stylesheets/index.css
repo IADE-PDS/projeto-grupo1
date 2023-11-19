@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    align-content: center;
+}
+
+body
+{
+
+    background: beige;
+    background-image: url(../imagens/medium_1f8749069714c3a898af4e90ed3e760b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+}
+
+.input{
+    min-width: 280px;
+    border-radius: 22px;
+    border: 2px #6f7e8a solid;
+    padding: 5px;
+    margin: 0px 0px 12px -5px;
+    text-decoration: none;
+}
+
+.botao
+{
+    margin-top: 1%;
+    width: 15%;
+    text-align: center;
+    background: transparent;
+    text-decoration: none;
+
+}
+
+.botao button{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(-45deg, #dd9f01, #d75600);
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 1.2em;
+    color: #6f7e8a;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botao button:hover{
+    background: linear-gradient(-45deg, #ae800c, #b2500f);
+    text-decoration: none;
+}
+
+.title
+{
+    text-align: right;
+    color: white;
+}
+
+.titulo
+{
+    text-align: center;
+    color: white;
+}

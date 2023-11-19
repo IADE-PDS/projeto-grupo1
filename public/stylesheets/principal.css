@@ -1,0 +1,336 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body{
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  background: beige;
+}
+
+
+
+/*
+**** layout ****
+*/
+
+header{
+  height: min-content;
+  background: linear-gradient(-45deg, #f3b311, #f16e16);
+  box-sizing: content-box;
+  display: flex;
+  margin: 100;
+  margin-bottom: 20px;
+}
+
+#logo{
+  padding: 0;
+}
+
+/*formatar menu*/
+#menu{
+  padding-right: 5px;
+  text-align: right;
+}
+
+a:link, a:visited{
+  color:bisque;
+  padding: 8px 12px;
+}
+
+/*a:hover{
+  color:#f16e16;
+  background: bisque;
+}*/
+
+/*formatar diversos*/
+h1{
+  color:bisque;
+  text-align: left;
+  font-size: 2.5em;
+  width: max(60%, calc(100% - 600px));
+}
+
+h5{
+  color: #000;
+  text-align: left;
+  font-size: 1.5em;
+  width: max(60%, calc(100% - 600px));
+}
+
+h2{
+  color: #000;
+  text-align: left;
+  font-size: 1.5em;
+  width: max(60%, calc(100% - 600px));
+}
+
+#conteudo > h1{
+  color:bisque;
+  text-align: center;
+  font-size: 2.5em;
+  width: max(60%, calc(100% - 600px));
+}
+
+header  h1{
+  color:bisque;
+  text-align: center;
+  font-size: 2.5em;
+  width: max(60%, calc(100% - 600px));
+}
+
+/* Shop lists boxes */
+
+#carro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;  
+  align-items: center;
+}
+
+#carro li {
+  margin: 5px;
+  padding: 5px;
+  width: 40%;
+  background-color: chocolate;
+  color:white;
+  font-size: large;
+}
+
+/* Items */
+
+#items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;  
+  align-items: center;
+}
+
+#items li {
+    margin: 5px;
+    padding: 5px;
+    width: 40%;
+    background-color: chocolate;
+    color:white;
+    font-size: large;
+    display: flex;  
+    align-items: flex-start;
+}
+
+
+#items li img {
+  width: 50%;
+  margin-right: 5px;
+}
+
+
+
+#conteudo
+{
+  padding: 10px;
+  background: beige;
+}
+
+.opcoes
+{ 
+  background-color: antiquewhite;
+  padding: 18px;
+  text-align: center;
+}
+
+.opcoes a
+{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid orange;
+  padding: 5px;
+}
+
+#conteudo
+{
+  padding: 10px;
+  background: beige;
+}
+
+#rodape
+{
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+/*TABELA*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Define as colunas do layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  flex-basis: calc(25% - 16px); /* ajuste o valor conforme necessário */
+  margin-bottom: 16px;
+}
+
+/* Define o estilo das lojas */
+.card {
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  max-width: 250px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+/* Define o estilo da imagem da loja */
+.book-cover {
+  max-width: 100%;
+  max-height: 80%;
+  object-fit: contain;
+  margin: auto;
+}
+
+/* Define o estilo do nome da loja */
+.book-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+/* Define o estilo da descricao */
+.book-author {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Define o estilo do preço */
+.price {
+  color: grey;
+  font-size: 22px;
+  margin-top: 8px;
+}
+
+/* Define o estilo do botão */
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: auto;
+}
+
+button:hover {
+  background-color: red;
+}
+
+
+.lista_produto{
+  padding: 40px;
+  height: min-content;
+  box-sizing: content-box;
+  display: block;
+  float:left;
+}
+
+
+/*Lista de produtos*/
+.nome_produto, .descricao_produto{
+  padding: 15px;
+  background: rgb(253, 253, 212);
+  color:rgb(15, 15, 15);
+}
+
+.nome_produto{
+  font-size: 2em;
+}
+
+/*.descricao_produto{
+  padding: 5px;
+}*/
+
+.imagem_produto{
+  padding: 5px;
+  height: 250px;
+  width: auto;
+  float: left;
+}
+
+.product_text_area{
+  display: block;
+  height: 100%;
+  float: clear;
+}
+
+
+
+/*Lista de loja*/
+
+
+.lista_loja{
+padding: 40px;
+height: min-content;
+box-sizing: content-box;
+display: block;
+float:left;
+}
+              
+.loja_nome, .loja_endereco{
+padding: 15px;
+background: rgb(253, 253, 212);
+color:rgb(15, 15, 15);
+}
+            
+.loja_nome{
+font-size: 2em;
+}
+              
+/*.loja_endereco{
+padding: 5px;
+}*/
+              
+.imagem_loja{
+padding: 5px;
+height: 250px;
+width: auto;
+float: left;
+}
+
+.loja_text_area{
+display: block;
+height: 100%;
+float: clear;
+}
+
+.map{
+height: 350px; 
+width: 90%; 
+margin: 15px;
+background-color: black;
+}

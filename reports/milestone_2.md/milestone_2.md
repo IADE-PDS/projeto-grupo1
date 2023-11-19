@@ -113,7 +113,7 @@ o	Objetivo: Deseja vender produtos para ganhar algum dinheiro extra e aumentar a
 
 ![WhatsApp Image 2023-11-19 at 16 59 40](https://github.com/IADE-PDS/projeto-grupo1/assets/100430459/f88e0e1d-39d4-4ff9-9dfa-a10449183208)
 
-**Outros artefactos a definir pela UC de Engenharia de Software, de acordo com o projeto**
+<h3> **Outros artefactos a definir pela UC de Engenharia de Software, de acordo com o projeto** </h3>
 
 
 

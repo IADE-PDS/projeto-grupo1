@@ -1,7 +1,5 @@
 **Versão atualizada do relatório**
 
-**Nome do projeto:** Mambos da banda
-
 **Definição final dos guiões**
 
 1º Caso: Utilizador registado:
@@ -48,3 +46,5 @@ o	Idade: 40 anos
 o	Profissão: Empresário
 o	Objetivo: Deseja vender produtos para ganhar algum dinheiro extra e aumentar a visibilidade da sua loja e atrair mais clientes interessados em produtos para confecção de pratos típicos angolanos.
 
+**Diagrama de dominio**
+![Captura de Ecrã (145)](https://github.com/IADE-PDS/projeto-grupo1/assets/100430459/b7e0ec30-be59-46f5-806f-c295d8efee6a)

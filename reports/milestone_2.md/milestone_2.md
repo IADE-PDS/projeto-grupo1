@@ -319,7 +319,7 @@ Resultado:
 ]
 
 
-Objetivo: Listar todas as lojas disponíveis
+** Objetivo: Listar todas as lojas disponíveis ** 
 
 Descrição: Devolver todas as lojas apresentadas no website. 
 
@@ -392,7 +392,7 @@ Resultado:
 ]
 
 
-Objetivo: Obter um determinado produto ao pesquisar
+** Objetivo: Obter um determinado produto ao pesquisar ** 
 
 Descrição: Obter o nome do produto, descrição, imagem de um produto após a pesquisa 
 por nome. 
@@ -414,6 +414,79 @@ Resultado, com o product “moamba”:
  "quantidade": null
  }
 ]
+
+
+** Objetivo: Apresentar as lojas em que um produto está disponível. ** 
+
+Descrição: Obter as lojas em que um determinado produto esta disponível, a sua 
+localização, nome, endereço da loja, código postal. Assim como nome do produto, 
+descrição de um produto, imagem de um produto, preço e quantidade em loja.
+
+URL: /api/lojas/prod/2 (GET – Produto/Loja)
+
+Parâmetros: name - Devolve as informações de um produto selecionado através do 
+nome. 
+
+Resultado, com o produto “Fuba de Bombó 3kg”: 
+[
+ {
+"loja_id": 2,
+"loja_nome": "Angolan Foods"
+"loja_telefone": "933458960"
+"loja_endereco": "Lisboa Rua 10",
+"loja_cpostal": "1300-174 ",
+"loja_img_url": "imagens/loja.png"
+"loja_localizacao" : "0101000020E6100000C6617A0CA05522C0067D8E345D5D4340"
+"prod_id": 2,
+"prod_nome": "Fuba de bombó 3kg",
+"descricao": "Farinha de mandioca, 1Kg",
+"produto_img_url": "https://i.imgur.com/kRldh91.png",
+"prod_preco" : 8.5,
+"prod_quantidade": 20
+]
+
+
+Objetivo: Autenticação do usuário
+
+Descrição: Autenticar um determinado usuário. 
+
+URL: /api/users/auth (POST – LOGIN). 
+
+Parâmetros: 
+
+{
+ "username": "seu_nome_de_usuário",
+ "password": "sua_senha"
+}
+
+Exemplo de requisição: 
+'{"username": "seu_nome_de_usuário", "password": "sua_senha"}'
+
+
+** Objetivo: Registar o usuário.** 
+
+Descrição: Regista um novo usuário na plataforma.
+
+URL: /api/users/ (POST-REGISTO)
+
+Exemplo de requisição: {
+ "email": "seu_email",
+ "password": "sua_password",
+ "username": "seu_nome_de_usuário",
+ "location": "localização_em_que_se_encontra"
+}
+
+
+** Objetivo: Abrir a páginade pagamento stripe. ** 
+
+Descrição: Abrir a página de pagamento stripe para que o usuário possa finalizar a sua 
+compra.
+
+URL: /api/stripe/create-checkout-session (POST - CHECK_OUT)
+
+Resultado Stripe:
+
+![Imagem_PNG](https://github.com/IADE-PDS/projeto-grupo1/assets/100430459/0f5f28d6-e8de-42ae-a751-1d4ca8bb9877)
 
 
 <h3> **Um esboço da estrutura dos dados** </h3>

@@ -8,11 +8,11 @@ Para explicar o fluxo desta arquitetura devemos primeiro compreender que compone
 
 - Um deployment Kubernetes que possui 2 réplicas/pods da WEB App. 
 
-- Cada deployment possui um serviço NodePort para expor o pod api e o pod web App para fora do cluster e para que os pedidos cheguem aos respectivos deployments/pods pelas suas respectivas nodeports. Funciona como um load balancer, não utilizamos serviço do tipo load balancer devido ao facto de que o Kubernetes para serviços do tipo load balancer trabalhar apenas com provedores externos com ( aws, GCE). Tentamos minimizar a quantidade de provideres a serem utilizados para reduzir a carga de trabalho e o custo de ler várias documentações. 
+- Cada deployment possui um serviço NodePort para expor o pod api e o pod web App para fora do cluster e para que os pedidos cheguem aos respectivos deployments/pods pelas suas respectivas nodeports. Funciona como um load balancer, não utilizamos serviço do tipo load balancer devido ao facto de que o Kubernetes para serviços do tipo load balancer trabalha apenas com provedores externos como ( aws, GCE). Tentamos minimizar a quantidade de provideres a serem utilizados para reduzir a carga de trabalho e o custo de ler várias documentações. 
 
-- Um Ingress controller sa nginx que será para redirecionar os tráfego entre Os pods da api e do web app ( a configurar para próxima última entrega, e a confirmar se realmente é necessário junto ao docente).
+- Um Ingress controller nginx que será para redirecionar os tráfego entre Os pods da api e do web app ( a configurar para próxima última entrega, e a confirmar se realmente é necessário junto ao docente, porque o reverse proxy ja o faz).
 
-- Um Reverse Proxy da Nginx que suporta os ficheiros estáticos do web site, e que encaminha os pedidos do client  para o Backend. 
+- Um Reverse Proxy da Nginx que suporta os ficheiros estáticos do web site, e que encaminha os pedidos do client  para o Backend, utilizando a nodePort do backend. 
 
 - Um Load Balancer da aws para fazer a comunicação entre o backend e as bases de dados. ( a configurar para última entrega) 
 
@@ -20,9 +20,9 @@ Para explicar o fluxo desta arquitetura devemos primeiro compreender que compone
 
 Agora explicando o fluxo actual da nossa aplicação até ao momento. 
 
-1 - O Web site tem os ficheiros estáticos em um reverse Proxy nginx. Portanto quando o cliente acede a aplicação o reverse Proxy está autorizado a permitir o acesso aos ficheiros estáticos apenas por via da rede do cluster com acompanhada pela nodeport do pod da web app dentro do cluster que permite a conexão com o Proxy, para que o site possa ser acedido pelos clientes. 
+1 - O Web site tem os ficheiros estáticos em um reverse Proxy nginx. Portanto quando o cliente acede a aplicação o reverse Proxy está autorizado a permitir o acesso aos ficheiros estáticos apenas por via da rede do cluster acompanhada pela nodeport do pod da web app dentro do cluster que permite a conexão com o Proxy, para que o site possa ser acedido pelos clientes. 
 
-2 - Quando o cliente faz o request( login ou registro), este request passa pelo reverse Proxy que o encaminha para o nodePort do Pod da API. 
+2 - Quando o cliente faz o request( login ou registro), este request passa pelo reverse Proxy que o encaminha para o nodePort do Pod da API(backend). 
 
 3 - Em seguida o Pod da api, encaminha o pedido para base de dados da Aws, utilizando as credencias de segurança configuradas na aws para o acesso da rede 192.168.64.6. 
 

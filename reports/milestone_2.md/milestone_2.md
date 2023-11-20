@@ -319,7 +319,7 @@ Resultado:
 ]
 
 
-** Objetivo: Listar todas as lojas disponíveis ** 
+**Objetivo: Listar todas as lojas disponíveis** 
 
 Descrição: Devolver todas as lojas apresentadas no website. 
 
@@ -392,7 +392,7 @@ Resultado:
 ]
 
 
-** Objetivo: Obter um determinado produto ao pesquisar ** 
+**Objetivo: Obter um determinado produto ao pesquisar** 
 
 Descrição: Obter o nome do produto, descrição, imagem de um produto após a pesquisa 
 por nome. 
@@ -416,7 +416,7 @@ Resultado, com o product “moamba”:
 ]
 
 
-** Objetivo: Apresentar as lojas em que um produto está disponível. ** 
+**Objetivo: Apresentar as lojas em que um produto está disponível.** 
 
 Descrição: Obter as lojas em que um determinado produto esta disponível, a sua 
 localização, nome, endereço da loja, código postal. Assim como nome do produto, 
@@ -446,7 +446,7 @@ Resultado, com o produto “Fuba de Bombó 3kg”:
 ]
 
 
-Objetivo: Autenticação do usuário
+**Objetivo: Autenticação do usuário** 
 
 Descrição: Autenticar um determinado usuário. 
 
@@ -463,7 +463,7 @@ Exemplo de requisição:
 '{"username": "seu_nome_de_usuário", "password": "sua_senha"}'
 
 
-** Objetivo: Registar o usuário.** 
+**Objetivo: Registar o usuário** 
 
 Descrição: Regista um novo usuário na plataforma.
 
@@ -477,7 +477,7 @@ Exemplo de requisição: {
 }
 
 
-** Objetivo: Abrir a páginade pagamento stripe. ** 
+**Objetivo: Abrir a páginade pagamento stripe.** 
 
 Descrição: Abrir a página de pagamento stripe para que o usuário possa finalizar a sua 
 compra.

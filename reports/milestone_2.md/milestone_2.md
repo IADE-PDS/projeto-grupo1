@@ -10,13 +10,9 @@ Para explicar o fluxo desta arquitetura devemos primeiro compreender que compone
 
 - Cada deployment possui um serviço NodePort para expor o pod api e o pod web App para fora do cluster e para que os pedidos cheguem aos respectivos deployments/pods pelas suas respectivas nodeports. Funciona como um load balancer, não utilizamos serviço do tipo load balancer devido ao facto de que o Kubernetes para serviços do tipo load balancer trabalha apenas com provedores externos como ( aws, GCE). Tentamos minimizar a quantidade de provideres a serem utilizados para reduzir a carga de trabalho e o custo de ler várias documentações. 
 
-- Um Ingress controller nginx que será para redirecionar os tráfego entre Os pods da api e do web app ( a configurar para próxima última entrega, e a confirmar se realmente é necessário junto ao docente, porque o reverse proxy ja o faz).
-
 - Um Reverse Proxy da Nginx que suporta os ficheiros estáticos do web site, e que encaminha os pedidos do client  para o Backend, utilizando a nodePort do backend. 
 
-- Um Load Balancer da aws para fazer a comunicação entre o backend e as bases de dados. ( a configurar para última entrega) 
-
-- Bases de dados provenientes do serviço RDS da aws do tipo postgresql, dentro da aws configuramos a base de estados para sua replicação no estado read and write. Configuramos também a base de dados para que ela permita o acesso a uma rede específica que é a rede 192.168.64.6 ( rede do cluster), após isso ela está disponível para ser manuseada através do Pg admin bastando apenas colocar credenciais e host fornecidos pela Amazon. Portanto as bases de dados se encontram fora do cluster Kubernetes. 
+- Bases de dados provenientes do serviço RDS da aws do tipo postgresql, dentro da aws configuramos a base de estados para sua replicação no estado read and write. Configuramos também a base de dados para que ela permita o acesso a uma rede específica que é a rede 192.168.64.6 (rede do cluster), após isso ela está disponível para ser manuseada através do Pg admin bastando apenas colocar credenciais e host fornecidos pela Amazon. Portanto as bases de dados se encontram fora do cluster Kubernetes. 
 
 Agora explicando o fluxo actual da nossa aplicação até ao momento. 
 
@@ -28,7 +24,8 @@ Agora explicando o fluxo actual da nossa aplicação até ao momento.
 
 4 - A base de dados principal recebe o pedido e o actualiza imediatamente para a base de dados replica. Tendo as duas exatamente os mesmos dados em tempo real. Apenas a base de dados principal envia selects e inserts. E a base de dados replica envia selects e inserts apenas quando a principal está embaixo.
 
-![image](https://github.com/IADE-PDS/projeto-grupo1/assets/100430459/d2173fbf-75e3-4642-bd8b-d7ac8791aa63)
+![image](https://github.com/IADE-PDS/projeto-grupo1/assets/100430459/ea6678eb-fadd-4d8e-b3de-5de2f7cb977c)
+
 
 
 

@@ -24,8 +24,7 @@ Agora explicando o fluxo actual da nossa aplicação até ao momento.
 
 4 - A base de dados principal recebe o pedido e o actualiza imediatamente para a base de dados replica. Tendo as duas exatamente os mesmos dados em tempo real. Apenas a base de dados principal envia selects e inserts. E a base de dados replica envia selects e inserts apenas quando a principal está embaixo.
 
-![image](https://github.com/IADE-PDS/projeto-grupo1/assets/100430459/ea6678eb-fadd-4d8e-b3de-5de2f7cb977c)
-
+![image](https://github.com/IADE-PDS/projeto-grupo1/assets/100430459/da2a469b-487c-4c50-b5dc-9f569c4f71b0)
 
 
 

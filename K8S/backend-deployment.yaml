@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-web-server
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: k8s-web-server
+  template:
+    metadata:
+      labels:
+        app: k8s-web-server
+    spec:
+      containers:
+      - name: k8s-web-server
+        image: wesley06/ice-tea-backv2
+        ports:
+        - containerPort: 8080

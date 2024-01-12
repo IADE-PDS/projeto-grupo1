@@ -1,0 +1,38 @@
+.locationSeccion{
+
+    background-color:#f5f5dc;
+    width: 100%;
+    height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+}
+
+.map-container {
+    height: calc(100vh - 120px); /* Altura do mapa */
+    width: 100%;   /* Largura do mapa */
+     /* Espaçamento do topo */
+    background-color: black;
+}
+
+.leaflet-container {
+
+    height: calc(100vh - 120px);
+}
+
+.store-card{
+
+    width: 200px;
+    height: 280px;
+}
+
+.store-card-img img{
+
+    width: 200px;
+    border-radius: 5px;
+}
+
+.store-card-info h2{
+
+    color: orange;
+
+}

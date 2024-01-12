@@ -1,0 +1,88 @@
+.HomeContainer{
+
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: url(https://i.imgur.com/wxX3ybP.jpg);
+}
+
+.title-search-container{
+
+    width: 100%;
+    height: calc(80vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alignment-text-div h1,h2{
+    color: whitesmoke;
+   
+}
+
+#searchBox{
+
+    width: 700px;
+    height: 45px;
+    background-color:whitesmoke;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#input{
+    display: flex;
+    margin-left: 20px;
+    height: 30px;
+    width: 500px;
+    font-size: 15px;
+    background-color: whitesmoke;
+    border-width: 0;
+    outline: none;
+}
+
+#button{
+    margin-right: 2px;
+    height: 42px;
+    border-radius: 20px;
+    width: 42px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+    background-color: #f17a15;
+    border-width: 0;
+}
+
+#icon{
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.buttonContainer{
+
+    margin-top: 20px;
+    align-self: center;
+    width: 160px;
+    height: 50px;
+    border-style: none;
+    background: rgb(243,168,18);
+    background: linear-gradient(180deg, rgba(243,168,18,1) 0%, rgba(242,149,19,1) 49%, rgba(241,122,21,1) 100%);
+    border-radius: 16px;
+    margin-left: calc(700px - 55vh);
+}
+
+.buttonContainer span{
+
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.userName{
+
+    margin-right: 10px;
+    color: white;
+    font-size: 20px;
+}

@@ -1,0 +1,243 @@
+
+.seccionProdutos{
+
+    background-color:#f5f5dc;
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+}
+
+.card-header-positioner{
+
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+.card-Header{
+
+    margin-top: 10px;
+    width: 90%;
+    height: 6vh;
+    background-color: #4caf50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.card-Header span{
+
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 14px;
+}
+
+.CarrinhoPositioner{
+
+    width: 100%;
+    height: auto;
+    
+}
+
+.CarrinhoPositioner hr{
+
+  height: 3px;
+  background-color: #e2e2e2;
+  border: 0;
+  width: 90%;
+}
+
+.ProdutosCarrinho-positioner{
+
+
+    display: flex;
+    justify-content: center;
+    height: auto;
+    background-color: #f5f5dc;
+}
+
+.ProdutosCarrinho{
+
+    margin-top: 20px;
+    height: 90px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ProdutosCarrinho span{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#Botao-compra{
+    margin-top: 20px;
+    width: 90%;
+    height: 40px;
+    border-width: 0;
+    background-color: black;
+}
+
+#Botao-compra span{
+    color: white;
+    font-size: 20px;
+    
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartItem {
+  width: 700px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin: 30px;
+}
+
+.cartItem img {
+  width: 200px;
+}
+
+.cartItem .description {
+  width: 100%;
+  font-size: 30px;
+}
+
+.countHandler input {
+  width: 40px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.checkout button {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.cartitems-format{
+
+  height: 400px;
+  width: 90%;
+  background-color: white;
+  
+}
+
+.card-Header-2{
+
+  margin-top: 10px;
+  width: 90%;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  height: auto;
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.carticon-product-icon{
+
+  height: 62px;
+  border-radius: 15px;
+}
+
+.remove-icon{
+
+  width: 15px;
+  margin: 0px 40px;
+  cursor: pointer;
+}
+
+.cartitems-quantity{
+  width: 64px;
+  height: 50px;
+  border: 2px solid whitesmoke;
+  background-color: white;
+}
+
+.cart-total-positioner{
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.cart-total-align{
+
+  width: 90%;
+  height: auto;
+
+}
+
+.cart-total-align h2{
+
+  color: black;
+
+}
+
+
+.cart-total-start{
+
+  width: 40%;
+  height: auto;
+
+  
+}
+
+.cart-total-start hr{
+
+  width: 100%;
+  height: 3px;
+  background-color: #e2e2e2;
+  border: 0;
+}
+
+.subtotal{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.cart-total-positioner button{
+  
+  background-color: black;
+  border-width: 0;
+  height: 40px;
+  width: 90%;
+  
+}
+
+.cart-total-positioner button span{
+  
+  color:  white;
+ 
+  
+}

@@ -8,8 +8,8 @@
 2. Clicando no produto aparecem-lhe as lojas mais próximas;
 3. O cliente escolhe a loja pelo preço ou pela distância;
 4. Adiciona produtos ao carrinho;
-5. Encomenda o produto preenchendo com seus dados (endereço, número de telefone, etc.);
-6. Prossegue para o pagamento utilizando a API de pagamentos;
+5. Vai para a aba carrinho e faz o checkout;
+6. Prossegue para o pagamento utilizando a API de pagamentos Stripe;
 7. Finaliza a compra e verifica se recebeu uma confirmação.
 
 2º Caso: Utilizador não registado:
@@ -24,17 +24,7 @@
 1. Adiciona automaticamente produtos ao carrinho através do botão IoT.
 2. Navega para a página do carrinho.
 3. Verifica se os produtos pré-definidos foram adicionados corretamente ao carrinho.
-4. Prossigue para o pagamento utilizando a API de pagamentos.
-5. Finaliza a compra e verifique se recebeu uma confirmação.
-
-ou 
-
-3º Caso: Utilizador com utilização de botão IoT:
-
-1. Adiciona automaticamente produtos ao carrinho através do botão IoT.
-2. Navega para a página do carrinho.
-3. Verifica se os produtos pré-definidos foram adicionados corretamente ao carrinho.
-4. Prossigue para o pagamento utilizando a API de pagamentos.
+4. Prossegue para o pagamento utilizando a API de pagamentos.
 5. Finaliza a compra e verifique se recebeu uma confirmação.
 
 <h3> **Versão atualizada de todos os diagramas relevantes para o projeto, de acordo com a indicação da UC de Engenharia de Software** </h3>

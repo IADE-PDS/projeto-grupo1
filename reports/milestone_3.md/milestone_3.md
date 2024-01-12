@@ -409,7 +409,7 @@ Exemplo de requisição: {
 }
 
 
-**Objetivo: Abrir a páginade pagamento stripe.** 
+**Objetivo: Abrir a páginade pagamento stripe. ** 
 
 Descrição: Abrir a página de pagamento stripe para que o usuário possa finalizar a sua 
 compra.

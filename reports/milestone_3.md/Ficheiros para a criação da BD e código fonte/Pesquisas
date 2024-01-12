@@ -1,1 +1,75 @@
+—Consulta as listas de compras associadas a um usuário 
 
+Select * from shoplist where shl_usr_id = $1
+
+—Consulta uma lista de compras específica para um usuário
+SELECT * FROM shoplist WHERE shl_usr_id = $1 AND shl_id = $2;
+
+—Consulta uma loja específica com base no ID da loja
+Select * from loja where loja_id=$1
+
+-Calcula a distância entre a localização da loja e a localização do usurário.
+SELECT ST_Distance(l1.geom, l2.geom) / 1000 AS distance_in_km, ST_X(l1.geom::geometry) AS longitude, ST_Y(l1.geom::geometry) AS latitude FROM (loja inner join localizacoes on loja.localizacao = localizacoes.id) as l1 , (appuser inner join localizacoes on appuser.localizacao = localizacoes.id) as l2 WHERE l1.loja_id = $1 AND l2.usr_id = $2
+
+—Obtém todas as lojas que vendem um determinado produto com base no ID do produto
+Select * from lojaproduto where prod_id_lp=$1
+
+— Consulta informações detalhadas sobre uma loja, sua localização, produtos que ela vende e detalhes desses produtos, com base no ID do produto 
+
+SELECT loja.loja_id, loja.loja_nome, loja.loja_telefone, loja.loja_endereco, loja.loja_cpostal, loja.img_url AS loja_img_url, localizacoes.geom AS loja_localizacao, produto.prod_id, produto.prod_nome, produto.descricao, produto.img_url AS produto_img_url, lojaproduto.prod_preco, lojaproduto.prod_quantidade FROM loja INNER JOIN localizacoes ON loja.localizacao = localizacoes.id INNER JOIN lojaproduto ON loja.loja_id = lojaproduto.loja_id_lp INNER JOIN produto ON lojaproduto.prod_id_lp = produto.prod_id WHERE produto.prod_id = $1
+
+-Consulta todas as lojas
+Select * from loja
+
+-Consulta todos os produtos 
+Select * from produto
+
+-Consulta sobre um produto específico
+Select * from produto where prod_id=
+
+-Procura produto pelo nome
+SELECT * FROM produto WHERE prod_nome ILIKE '%"+nome+"%'
+
+-consulta se existe um registro na tabela “lojaproduto” que associa uma loja a um produto 
+select * from lojaproduto where loja_id_lp=$1 and prod_id_lp=$2
+
+-Atualizar a quantidade de um produto específico em uma loja específica na tabela “lojaproduto”
+UPDATE lojaproduto SET prod_quantidade = $3 WHERE loja_id_lp=$1 and prod_id_lp=$2
+
+
+—Atualiza a data de vencimento (shl_due) de uma lista de compras específica para data e horas atuais
+UPDATE shoplist SET shl_due = now() WHERE shl_id=$1
+
+—Obter informações consolidadas sobre produtos em uma lista de compras específica, incluindo a quantidade total de cada produto, o preço associado e a loja onde os produtos estão disponíveis. E agrupa os resultados com base nas colunas especificadas.
+
+SELECT item.it_shl_id,  produto.prod_id, item.it_loja_id, produto.prod_nome, lojaproduto.prod_preco, loja.loja_nome, SUM(item.it_quant) AS sum_it_quant
+                FROM item
+                inner join produto on it_prd_id = prod_id
+                inner join lojaproduto on prod_id = prod_id_lp and it_loja_id = loja_id_lp
+                inner join loja on it_loja_id = loja_id
+                WHERE item.it_shl_id = $1
+                GROUP BY item.it_shl_id, item.it_loja_id, produto.prod_id, lojaproduto.prod_preco, loja.loja_nome;
+
+-Consulta listas de compras na tabela "shoplist" que pertencem a um usuário específico e foram criadas em uma data específica.
+Select * from shoplist where shl_usr_id = $1 and shl_created = $2
+
+—Consulta os identificadores únicos de listas de compras (shl.shl_id) e as datas associadas a compras nessas listas, para um usuário específico
+select DISTINCT ON (shl.shl_id) shl.shl_id, com.compra_data from compra as com INNER JOIN shoplist as shl ON com.compra_shl_id = shl.shl_id Where shl.shl_usr_id = $1
+
+—Obtém informações de um usuário com base no ID.
+Select * from appuser where usr_id=$1
+
+—Obtém informações de um usuário com base no nome de usuário.
+Select * from appuser where usr_name=$1
+
+—Verificar se um endereço de e-mail ou nome de usuário específico já existe na tabela “appuser”
+Select * from appuser where usr_email=$1 or usr_name=$2
+
+-Verifica as credenciais de login do usuário.
+Select * from appuser where usr_email=$1
+
+-Salva um token de autenticação para um usuário específico.
+Update appuser set usr_token=$1 where usr_id = $2
+
+-Obtém informações do usuário com base em um token de autenticação.
+Select * from appuser where usr_token = $1

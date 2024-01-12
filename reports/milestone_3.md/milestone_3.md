@@ -518,14 +518,51 @@ Agora, você está pronto para começar a sua jornada culinária com o Mambos da
 
 <h3>**Descrição das componentes de segurança implementadas e/ou planeadas**</h3>
 
-O uso de parâmetros torna a instrução segura contra injeção de SQL, pois os valores são passados como parâmetros e não diretamente incorporados na instrução SQL.
++ Palavras passe criptografadas
+  
+A autenticação por meio de palavras-passe é uma das formas mais comuns de garantir a identidade dos utilizadores no nosso website. No entanto, a simples escolha de palavras-passe complexas não é suficiente. A criptografia desempenha um papel crucial na proteção dessas informações confidenciais, garantindo que, mesmo se um conjunto de credenciais seja comprometido, os dados permaneçam inacessíveis para invasores. 
 
+O uso de palavras passe criptografadas permite-nos: 
 
+Resistir a ataques de força bruta e ataques de dicionário: Tornam quase impossível para os atacantes realizar ataques de força bruta em que são feitas inúmeras tentativas de descobrir a palavra passe e o uso de algoritmos de hashing é eficaz em proteger contra ataques baseados em dicionário. 
 
+Confidencialidade dos dados do utilizador: Garantimos que mesmo em caso de comprometimento da base de dados, os dados continuam confidencias, visto que as palavras-passe permanecem irreversíveis sem os hashes correspondentes. 
 
++ Certificado SSL 
 
+Secure Sockets Layer, um tipo de segurança digital que permite a comunicação criptografada entre um domínio de site e um browser. O HTTPS é uma extensão segura do HTTP. Os sites que configurarem um certificado SSL/TLS podem utilizar o protocolo HTTPS para estabelecer uma comunicação segura com o servidor. Tem como objetivo tornar segura a transmissão de informações sensíveis como dados pessoais, de pagamento ou de login e garantir que apenas a pessoa ou instituição para quem os dados estão a ser transmitidos possa ter acesso a informações. Torna mais difícil a interceptação de dados por atacantes.  
 
+Benefícios: 
+Quando é preciso autenticação: Permite que se comprove a identidade do servidor para que os utilizadores saibam que é autêntico. 
 
+Garantir confiabilidade: É importante criar um senso de segurança para que as pessoas se sintam confortáveis em fornecer seus dados. Um certificado SSL/TLS é uma maneira visível de dizer aos utilizadores que os seus dados vão estar seguros. 
 
+O SSL/TLS funciona através de chaves públicas e privadas, além de chaves de sessão para cada conexão segura. Quando o visitante coloca uma URL com SSL no browser e navega pela página segura, o browser e o servidor fazem uma conexão. 
+
+Durante a conexão inicial as chaves públicas e privadas são utilizadas para criar uma chave de sessão, que então é utilizada para cifrar e decifrar os dados sendo transferidos. Essa chave de sessão vai se manter válida por tempo limitado e só vai ser utilizada para essa sessão específica. 
+
++ Monitoramento de logs 
+
+O monitoramento de logs seria uma mais valia para o nosso website para garantir a segurança, integridade e eficiência operacional. Ao capturar e analisar registos detalhados de atividades, ganhamos insights valiosos que vão além de simplesmente diagnosticar problemas. Proporcionam uma visão abrangente do ambiente e fortalecem as defesas contra potenciais ameaças cibernéticas. 
+
+Identificação precoce de anomalias e Resposta Rápida a Incidentes: capacita a identificação de padrões e comportamentos anômalos, o que possibilita uma resposta proativa a atividades suspeitas antes que se tornem problemas sérios. E ao analisar logs em tempo real, ganhamos a capacidade de responder rapidamente a incidentes de segurança, mitigando potenciais danos e reduzindo o tempo de exposição a ameaças. 
+
+Identificação de Atividades Maliciosas: Analisando logs, podemos detectar atividades maliciosas, como tentativas de acesso não autorizado, invasões potenciais ou comportamentos suspeitos que indiquem ameaças à segurança.  
+
+Tomada de Decisão Informada: Informações detalhadas presentes nos logs embasam decisões de segurança e operacionais, permitindo uma tomada de decisão informada e estratégica.
+
++ O uso do caractere $ em consultas SQL
+
+O uso do caractere $ em consultas SQL, como em $1 ou $2, geralmente está associado ao conceito de parâmetros de consulta parametrizados ou preparados. Isso é especialmente comum em ambientes que suportam consultas parametrizadas, como muitas linguagens de programação ao interagir com bancos de dados.
+Usamos parâmetros para tornar a instrução segura contra injeção de SQL, pois os valores são passados como parâmetros e não diretamente incorporados na instrução SQL.
+
+A importância de usar parâmetros, como $1 e $2, está relacionada à segurança e à prevenção contra injeção de SQL. Quando você utiliza parâmetros, os valores fornecidos como entrada (por exemplo, de usuários) são tratados de maneira segura, evitando a possibilidade de ataques de injeção de SQL.
+Em resumo, o uso de $1 e $2 indica placeholders para parâmetros e contribui para a segurança
+
++ Nginx no kubernetes como firewall 
+
+Para além de Load Balancer para distribuir a carga e evitar sobrecarga de servidores, melhorar a escalabilidade e disponibilidade. Também gostaríamos de configurá-lo para atuar como um Web Application Firewall que atua como uma barreira de defesa robusta, implementando medidas de segurança avançadas ao limitar o tráfego e bloquear solicitações indesejadas. Pode filtrar solicitações com base no IP, cabeçalhos ou padrões específicos, o que pode ajudar a impedir o acesso não autorizado e proteger o aplicativo de ataques. 
+
+Ao implementar o Nginx como firewall no cluster Kubernetes, é criada uma barreira contra ameaças cibernéticas, o que garante a segurança e a integridade do website. Essa abordagem proativa é crucial para proteger dados sensíveis, preservar a confiança dos utilizadores e garantir a continuidade operacional. 
 
 

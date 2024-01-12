@@ -10,7 +10,7 @@
 4. Adiciona produtos ao carrinho;
 5. Vai para a aba carrinho e faz o checkout;
 6. Prossegue para o pagamento utilizando a API de pagamentos Stripe;
-7. Finaliza a compra e verifica se recebeu uma confirmação.
+7. Finaliza a compra e recebe uma confirmação no nosso site.
 
 2º Caso: Utilizador não registado:
 

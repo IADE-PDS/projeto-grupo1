@@ -476,7 +476,7 @@ Bem-vindo ao "Mambos da Banda"! O seu destino para encontrar todos os ingredient
 
 **1. Registo: Utilizador Registado**
 
-Se já possui uma conta, inicie sessão no Mambos da Banda. Se não tiver uma conta, registe-se com o seu e-mail ou utilize a opção de registo com uma conta existente, como o Google ou o Facebook.
+Se já possui uma conta, inicie sessão no Mambos da Banda. Se não tiver uma conta, registe-se com o seu e-mail.
 
 **2. Pesquisa de Produtos:**
 

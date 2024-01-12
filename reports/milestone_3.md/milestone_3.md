@@ -492,7 +492,7 @@ Se já possui uma conta, inicie sessão no Mambos da Banda. Se não tiver uma co
 
 **4. Adicionar ao Carrinho:**
 
-1. Na página da loja, selecione a quantidade desejada do produto.
+1. Selecione a quantidade desejada do produto.
 2. Adicione o produto ao carrinho.
 3. Repita o processo para outros produtos, se necessário.
 

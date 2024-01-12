@@ -484,7 +484,7 @@ Cada chamada para uma API do Stripe deve incluir uma chave secreta da API. Depoi
 
 <h3>**Descrição das componentes de segurança implementadas e/ou planeadas**</h3>
 
-
+O uso de parâmetros torna a instrução segura contra injeção de SQL, pois os valores são passados como parâmetros e não diretamente incorporados na instrução SQL.
 
 
 

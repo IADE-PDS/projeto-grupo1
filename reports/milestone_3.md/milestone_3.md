@@ -472,6 +472,50 @@ Cada chamada para uma API do Stripe deve incluir uma chave secreta da API. Depoi
 
 <h3>**Manual do utilizador**</h3>
 
+Bem-vindo ao "Mambos da Banda"! O seu destino para encontrar todos os ingredientes necessários para preparar pratos típicos angolanos de forma rápida e conveniente. Este manual irá guiá-lo através do processo de utilização da nossa aplicação web. Certifique-se de seguir cada passo para uma experiência sem complicações.
+
+**1. Registo: Utilizador Registado**
+
+Se já possui uma conta, inicie sessão no Mambos da Banda. Se não tiver uma conta, registe-se com o seu e-mail ou utilize a opção de registo com uma conta existente, como o Google ou o Facebook.
+
+**2. Pesquisa de Produtos:**
+
+1. Clique na aba de pesquisa localizada na barra de navegação.
+2. Insira o nome do produto que deseja encontrar na barra de pesquisa.
+3. Ao clicar no produto desejado, será apresentada uma lista de lojas que oferecem esse produto.
+
+**3. Escolha da Loja:**
+
+1. Veja a lista de lojas disponíveis com mapas onde se encontram localizadas e as informações sobre preços, quantidades e distâncias.
+2. Escolha a loja com base no preço ou na proximidade.
+
+
+**4. Adicionar ao Carrinho:**
+
+1. Na página da loja, selecione a quantidade desejada do produto.
+2. Adicione o produto ao carrinho.
+3. Repita o processo para outros produtos, se necessário.
+
+**5. Checkout:**
+
+1. Vá para a aba "Carrinho" quando estiver pronto para finalizar a compra.
+2. Verifique os itens no seu carrinho.
+3. Clique em "Proceed to Checkout" para iniciar o processo de pagamento.
+
+**6. Pagamento:**
+
+1. Será redirecionado para a página de pagamento, hospedada pela API de pagamentos Stripe.
+2. Preencha os seus dados como e-mail, detalhes bancários e nome do titular.
+3. Clique em "Pagar" para concluir a transação.
+
+**7. Confirmação e Regresso ao Site:**
+
+1. Após um pagamento bem-sucedido, será redirecionado de volta ao Mambos da Banda.
+2. O site confirmará que a transação foi concluída com sucesso.
+3. Um botão permitirá que você retorne à página inicial para explorar mais ou fazer novas compras.
+
+Agora, você está pronto para começar a sua jornada culinária com o Mambos da Banda! Se tiver alguma dúvida ou encontrar algum problema, entre em contacto com o nosso suporte. Agradecemos por escolher a nossa aplicação para as suas necessidades culinárias. Bom apetite!
+
 <h3>**Descrição das componentes de segurança implementadas e/ou planeadas**</h3>
 
 O uso de parâmetros torna a instrução segura contra injeção de SQL, pois os valores são passados como parâmetros e não diretamente incorporados na instrução SQL.
